@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/volumec/python_programe/python-exercise/microblog/venv"
+VIRTUAL_ENV="/volumec/python_programe/python-exercise/microblog-bak/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

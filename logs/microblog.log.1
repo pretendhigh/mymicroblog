@@ -1,0 +1,107 @@
+2020-08-20 15:34:05,302 ERROR: Exception on /index [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 43, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 490, in paginate
+    if per_page < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+2020-08-20 15:34:23,295 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 15:34:25,402 ERROR: Exception on /index [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 43, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 490, in paginate
+    if per_page < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+2020-08-20 15:34:27,058 ERROR: Exception on /index [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 43, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 490, in paginate
+    if per_page < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+2020-08-20 15:34:28,113 ERROR: Exception on /explore [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 58, in explore
+    page, current_app.config['POSTS_PER_PAGE'], False)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 490, in paginate
+    if per_page < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'
+2020-08-20 15:36:05,521 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 15:36:07,730 ERROR: Exception on /index [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 43, in index
+    page, current_app.config['POSTS_PER_PAGE'], False)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_sqlalchemy/__init__.py", line 490, in paginate
+    if per_page < 0:
+TypeError: '<' not supported between instances of 'str' and 'int'

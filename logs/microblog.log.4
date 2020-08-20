@@ -1,0 +1,102 @@
+2020-08-20 14:11:37,951 ERROR: Exception on /favicon.ico [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/errors/handlers.py", line 9, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/templates/errors/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/templates/base.html", line 55, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/templates/errors/404.html", line 5, in block "app_content"
+    <p><a href="{{ url_for('index') }}">{{ _('Back') }}</a></p>
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'index'. Did you mean 'main.index' instead?
+2020-08-20 14:15:24,119 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 14:18:17,601 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 14:19:01,137 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 14:19:10,279 ERROR: Exception on /search [GET] [in /volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/main/routes.py", line 155, in search
+    current_app.config['POSTS_PER_PAGE'])
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/models.py", line 14, in search
+    ids, total = query_index(cls.__tablename__, expression, page, per_page)
+  File "/volumec/python_programe/python-exercise/microblog-bak/app/search.py", line 23, in query_index
+    'from': (page - 1) * per_page, 'size': per_page})
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/elasticsearch/client/utils.py", line 84, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/elasticsearch/client/__init__.py", line 1548, in search
+    "GET", _make_path(index, doc_type, "_search"), params=params, body=body
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/elasticsearch/transport.py", line 358, in perform_request
+    timeout=timeout,
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 261, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/volumec/python_programe/python-exercise/microblog-bak/venv/lib64/python3.6/site-packages/elasticsearch/connection/base.py", line 182, in _raise_error
+    status_code, error_message, additional_info
+elasticsearch.exceptions.NotFoundError: NotFoundError(404, 'index_not_found_exception', 'no such index [post]', post, index_or_alias)
+2020-08-20 14:24:34,658 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
+2020-08-20 14:30:56,328 INFO: Microblog startup [in /volumec/python_programe/python-exercise/microblog-bak/app/__init__.py:77]
